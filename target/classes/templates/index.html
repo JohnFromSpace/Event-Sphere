@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+      <script src="https://kit.fontawesome.com/0b4303f61f.js" crossorigin="anonymous"></script>
+
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="EventSphere"/>
+
+      <link th:href="@{/css/ui/style.css}" rel="stylesheet" />
+      <link th:href="@{/css/ui/index-style.css}" rel="stylesheet" />
+
+      <title>Start screen</title>
+   </head>
+   <body>
+      <div id="content">
+         <header>
+            <a><img th:src="@{/images/ui/logo.png}" id="logo" alt="logo"></a>
+            <button type="button" id="login-header" class="text-button" onclick="location.href='/loginForm'">Login</button>
+         </header>
+         <section id="main-section">
+            <h1>The best place, for best events</h1>
+            <h2>Ready for events?</h2>
+            <button type="button" id="register" value="REGISTER" class="btn" onclick="location.href='/registrationForm'">REGISTER<i class="fas fa-angle-right"></i></button>
+         </section>
+      </div>
+      <footer>
+         <button class="text-button">About us</button>
+         <button class="text-button">Team</button>
+         <button class="text-button">Contact us</button>
+      </footer>
+   </body>
+</html>
